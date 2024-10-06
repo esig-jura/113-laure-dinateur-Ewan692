@@ -25,3 +25,47 @@ a {
 a:hover {
     color: darkmagenta;
 }
+
+.phone {
+    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+    font-size: 100%;
+    color: black;
+    list-style-type: none;
+    background-image: url(_sources/images/phone.png);
+    background-repeat: no-repeat;
+    background-position: 0% 65%;
+    padding-left: 15px;
+}
+
+.mail {
+    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+    font-size: 100%;
+    color: black;
+    list-style-type: none;
+    background-image: url(_sources/images/mail.png);
+    background-repeat: no-repeat;
+    background-position: 0% 65%;
+    padding-left: 15px;
+}
+
+.twitter {
+    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+    font-size: 100%;
+    color: black;
+    list-style-type: none;
+    background-image: url(_sources/images/twitter.png);
+    background-repeat: no-repeat;
+    background-position: 0% 65%;
+    padding-left: 15px;
+}
+
+.facebook {
+    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
+    font-size: 100%;
+    color: black;
+    list-style-type: none;
+    background-image: url(_sources/images/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 0% 65%;
+    padding-left: 15px;
+}
