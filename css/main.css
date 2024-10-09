@@ -83,6 +83,34 @@ a:hover {
     color: #011627;
 }
 
+/* Entête de page */
+header {
+    background-color: #011627;
+    padding-top: 5px;
+    margin-bottom: 30px;
+}
+
+header .logo {
+    text-align: center;
+    margin: 0;
+}
+
+header .nom {
+    font-family: 'Changa One', cursive;
+    font-weight: 400;
+    font-size: 1.75rem;
+    color: #2ec4b6;
+    margin: 15px 0;
+    line-height: .8;
+}
+
+header .metier {
+    color: #e71d36;
+    margin-top: -25px;
+    font-weight: bold;
+}
+
+/* Informations de contact */
 .phone {
     font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
     font-size: 100%;
