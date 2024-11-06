@@ -125,9 +125,14 @@ header nav ul li {
 }
 
 header nav ul li a {
+    display: inline-block;
     color: #fdfffc;
     font-weight: bold; /* ou 800 */
     padding: 15px 10px;
+}
+
+header nav ul li a:hover {
+    color: #2ec4b6;
 }
 
 header nav ul li a[href="index.html"] {
@@ -142,7 +147,7 @@ header nav ul li a[href="index.html"] {
     list-style-type: none;
     background-image: url(_sources/images/phone.png);
     background-repeat: no-repeat;
-    background-position: 0% 65%;
+    background-position: 0 65%;
     padding-left: 15px;
 }
 
@@ -153,7 +158,7 @@ header nav ul li a[href="index.html"] {
     list-style-type: none;
     background-image: url(_sources/images/mail.png);
     background-repeat: no-repeat;
-    background-position: 0% 65%;
+    background-position: 0 65%;
     padding-left: 15px;
 }
 
@@ -164,7 +169,7 @@ header nav ul li a[href="index.html"] {
     list-style-type: none;
     background-image: url(_sources/images/twitter.png);
     background-repeat: no-repeat;
-    background-position: 0% 65%;
+    background-position: 0 65%;
     padding-left: 15px;
 }
 
@@ -175,6 +180,35 @@ header nav ul li a[href="index.html"] {
     list-style-type: none;
     background-image: url(_sources/images/facebook.png);
     background-repeat: no-repeat;
-    background-position: 0% 65%;
+    background-position: 0 65%;
     padding-left: 15px;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 50px;
+    margin-top: 20px;
+}
+
+footer nav ul {
+    padding: 0; /* Supprimer la marge par défaut */
+    list-style-type: none; /* Supprimer les puces */
+}
+
+footer nav ul li {
+    display: inline-block;
+}
+
+footer nav ul li img {
+    width: 50px;
+    margin: 0 15px;
+
+    filter: grayscale(100%); /* Applique un filtre noir/blanc aux icônes */
+    transition: width 500s;
+}
+
+footer nav ul li img:hover {
+    width: 80px;
+    filter: grayscale(0%);
 }
