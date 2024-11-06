@@ -212,3 +212,16 @@ footer nav ul li img:hover {
     width: 80px;
     filter: grayscale(0%);
 }
+
+/* Page informations */
+.page-infos img.laure {
+    border-radius: 50%;
+    max-width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-infos h1 {
+    text-align: center;
+}
