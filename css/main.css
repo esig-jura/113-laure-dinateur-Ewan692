@@ -34,6 +34,7 @@
     src: url('../fonts/changa-one-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* Style généraux */
 * {
     box-sizing: border-box;
 }
@@ -83,6 +84,10 @@ a:hover {
     color: #011627;
 }
 
+.text-center {
+    text-align: center;
+}
+
 /* Entête de page */
 header {
     background-color: #011627;
@@ -98,10 +103,10 @@ header .logo {
 header .nom {
     font-family: 'Changa One', cursive;
     font-weight: 400;
-    font-size: 1.75rem;
     color: #2ec4b6;
+    font-size: 1.75rem;
     margin: 15px 0;
-    line-height: .8;
+    line-height: 0.8;
 }
 
 header .metier {
@@ -130,7 +135,6 @@ header nav ul li a {
     font-weight: bold; /* ou 800 */
     padding: 15px 10px;
 }
-
 header nav ul li a:hover {
     color: #2ec4b6;
 }
@@ -140,7 +144,7 @@ header nav ul li a[href="index.html"] {
 }
 
 /* Informations de contact */
-.phone {
+/*.phone {
     font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
     font-size: 100%;
     color: black;
@@ -182,35 +186,34 @@ header nav ul li a[href="index.html"] {
     background-repeat: no-repeat;
     background-position: 0 65%;
     padding-left: 15px;
-}
+}*/
 
 /* Pied de page */
 footer {
     text-align: center;
-    padding: 50px;
-    margin-top: 20px;
+    padding-top: 50px;
+    margin-bottom: 20px;
 }
 
 footer nav ul {
-    padding: 0; /* Supprimer la marge par défaut */
-    list-style-type: none; /* Supprimer les puces */
+    padding: 0; /* Supprime la marge par défaut */
+    list-style-type: none; /* Supprime les puces */
 }
 
 footer nav ul li {
     display: inline-block;
 }
 
-footer nav ul li img {
+footer nav ul img {
     width: 50px;
     margin: 0 15px;
 
     filter: grayscale(100%); /* Applique un filtre noir/blanc aux icônes */
-    transition: width 500s;
+    transition: filter 500ms;
 }
 
-footer nav ul li img:hover {
-    width: 80px;
-    filter: grayscale(0%);
+footer nav ul img:hover {
+    filter: grayscale(0);
 }
 
 /* Page d'accueil (index) */
