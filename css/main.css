@@ -143,51 +143,6 @@ header nav ul li a[href="index.html"] {
     display: none;
 }
 
-/* Informations de contact */
-/*.phone {
-    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
-    font-size: 100%;
-    color: black;
-    list-style-type: none;
-    background-image: url(_sources/images/phone.png);
-    background-repeat: no-repeat;
-    background-position: 0 65%;
-    padding-left: 15px;
-}
-
-.mail {
-    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
-    font-size: 100%;
-    color: black;
-    list-style-type: none;
-    background-image: url(_sources/images/mail.png);
-    background-repeat: no-repeat;
-    background-position: 0 65%;
-    padding-left: 15px;
-}
-
-.twitter {
-    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
-    font-size: 100%;
-    color: black;
-    list-style-type: none;
-    background-image: url(_sources/images/twitter.png);
-    background-repeat: no-repeat;
-    background-position: 0 65%;
-    padding-left: 15px;
-}
-
-.facebook {
-    font-family: Verdana, Arial, Helvetica, Geneva, sans-serif;
-    font-size: 100%;
-    color: black;
-    list-style-type: none;
-    background-image: url(_sources/images/facebook.png);
-    background-repeat: no-repeat;
-    background-position: 0 65%;
-    padding-left: 15px;
-}*/
-
 /* Pied de page */
 footer {
     text-align: center;
@@ -227,7 +182,7 @@ footer nav ul img:hover {
 
 .page-accueil ul.realisations li {
     background-color: #e7e9eb;
-    flex-basis: calc(50% - 20px); /* Affichage sur 2 colonnes (moins les 20px du gap) */
+    flex-basis: calc(50% - 20px); /* Affichage sur 2 colonnes (moins les 20px du gap) en divisant l'espace en 2 */
     flex-grow: 1;                 /* Autorise de prendre plus de place si disponible */
     transition: transform .2s;    /* On met toujours l'animation sur l'effet de base */
 }
@@ -259,4 +214,33 @@ footer nav ul img:hover {
 
 .page-infos h1 {
     text-align: center;
+}
+
+/* Pied de page */
+.page-contact ul.contact {
+    list-style-type: none;
+    padding: 0;
+}
+
+.page-contact ul.contact a {
+    padding: 30px;                /* Crée l'espace pour la puce image */
+    background-image: url("_sources/images/facebook.png");
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: 5px 2px; /* Décaler 5px de la gauche et 2px du haut */
+}
+
+/* Tous les liens dont l'attribut "href" commencent par tel */
+.page-contact ul.contact [href^="tel"] {
+    background-image: url("_sources/images/phone.png");
+}
+
+/* Tous les liens dont l'attribut "href" commencent par mailto */
+.page-contact ul.contact [href^="mailto"] {
+    background-image: url("_sources/images/mail.png");
+}
+
+/* Tous les liens qui contiennent twitter dans l'attribut "href" */
+.page-contact ul.contact [href*="twiter"] {
+    background-image: url("_sources/images/twitter.png");
 }
